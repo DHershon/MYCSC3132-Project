@@ -2,10 +2,13 @@
 //get the db connection file
 require_once 'dbconf.php';
 
+function PrintTable($tableName,$connect)
+{
+
 try {
 
 	//Query
-	$sql = "SELECT * FROM $student";
+	$sql = "SELECT * FROM $tableName";
 
 	//excute the quey
 	$result = mysqli_query($connect,$sql);
@@ -39,3 +42,10 @@ try {
 } catch (Exception $e) {
 	die($e->getMessage());
 }
+}
+
+
+PrintTable("books",$connect);
+
+PrintTable("reviews",$connect);
+?>
