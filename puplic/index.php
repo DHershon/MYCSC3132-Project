@@ -45,7 +45,7 @@ try {
 }
 
 
-PrintTable("books",$connect);
+//PrintTable("books",$connect);
 
-PrintTable("reviews",$connect);
+PrintTable("student",$connect);
 ?>
