@@ -58,7 +58,7 @@
    
     
     //insert data into table
-    function addData($connect, $id,$name,$age,$gender,$course,$entrollment_date){
+    function addData($connect,$id,$name,$age,$gender,$course,$entrollment_date){
         try{
             //query
             $sql="INSERT INTO student VALUE ('$id','$name',$age,$gender,'$course','$entrollment_date')";
@@ -83,7 +83,7 @@
         $gender=$_POST['gender'];
         $course=$_POST['course'];
         $entrollment_date=$_POST['entrollment_date'];
-        addData($connect, $id,$name,$age,$gender,$course,$entrollment_date);
+        addData($connect,$id,$name,$age,$gender,$course,$entrollment_date);
      } 
      
 ?>
