@@ -8,7 +8,7 @@
     <title>School</title>
 </head>
 <body>
- <form action="addData.php" method="POST">
+ <form action="AddData.php" method="POST">
     <table>
         <tr>
            
@@ -43,7 +43,7 @@
         <tr>
             
             <td align="right">entrollment_date</td>
-            <td><input type="number" name="entrollment_date" /></td>
+            <td><input type="date" name="entrollment_date" /></td>
         </tr>
         <tr>
             <td></td>
@@ -61,7 +61,7 @@
     function addData($connect,$id,$name,$age,$gender,$course,$entrollment_date){
         try{
             //query
-            $sql="INSERT INTO student VALUE ('$id','$name',$age,$gender,'$course','$entrollment_date')";
+            $sql="INSERT INTO student VALUE ($id,'$name',$age,'$gender','$course','$entrollment_date')";
             //execute the query
             $result=mysqli_query($connect,$sql);
             if($result){
