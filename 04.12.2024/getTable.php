@@ -3,21 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Search Books</title>
+	<title>Search Student</title>
 </head>
 <body>
 <?php
 //get the db connection file
-require_once 'conf/dbconf.php';
-require_once 'fun/myfunc.php';
+require_once 'dbconf.php';
+require_once 'myfunc.php';
 //PrintTable("books",$connect);
 //echo $_SERVER['PHP_SELF']; //get the file name
 ?>
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
 		<table>
 			<tr>
-				<td align="right">Book Name:</td>
-				<td><input type="text" name="bkname" /></td>
+				<td align="right">Student Name:</td>
+				<td><input type="text" name="name" /></td>
 			</tr>
 			<tr>
 				<td></td>
@@ -26,8 +26,8 @@ require_once 'fun/myfunc.php';
 		</table>
 
 <?php
-if (isset($_GET['bkname']) && $_GET['bkname'] != '') {
-	SearchBooks($_GET['bkname'],$connect);
+if (isset($_GET['name']) && $_GET['name'] != '') {
+	SearchStudent($_GET['name'],$connect);
 }
 	
 ?>
