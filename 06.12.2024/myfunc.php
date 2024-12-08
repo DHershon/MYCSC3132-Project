@@ -7,7 +7,7 @@ require_once 'dbconf.php';
  function student($connect){
             try{
             
-                $sql = "SELECT id, name FROM  student";
+                $sql = "SELECT id, name FROM student";
             
             
                 $result = mysqli_query($connect,$sql);
@@ -32,7 +32,7 @@ require_once 'dbconf.php';
                     foreach ($row as $key => $value) {
                         echo "<td>$value</td>";
                     }
-                    $student_id=$row['id'];
+                    $id=$row['id'];
                     //query string
                     echo "<td><a href='printTable.php? id=$id '> View </a> </td>";
                     echo "</tr>";
