@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Table</h1><br><br>
+    <h1>Table link</h1><br><br>
 
     <a href="getTable.php">Gettable</a><br>
     

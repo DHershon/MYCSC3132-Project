@@ -87,7 +87,7 @@ function PrintTableCols($tableName,$connect,$colnames)
 	}
 }
 
-//wrtie a function to search the books by name
+//wrtie a function to search the students by name
 function SearchStudent($name,$connect)
 {
 	try {
