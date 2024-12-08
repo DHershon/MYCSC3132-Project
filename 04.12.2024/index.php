@@ -11,8 +11,5 @@
 
     <a href="getTable.php">Gettable</a><br>
     
-
-
-    
 </body>
 </html>

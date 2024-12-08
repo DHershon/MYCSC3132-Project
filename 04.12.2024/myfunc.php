@@ -93,7 +93,7 @@ function SearchStudent($name,$connect)
 	try {
 
 	//Query
-		$sql = "SELECT * FROM student where name like '%$name%' ";
+		$sql = "SELECT * FROM student where course like '%$course%' ";
 		//echo $sql;
 	//excute the quey
 		$result = mysqli_query($connect,$sql);
