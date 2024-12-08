@@ -7,9 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Nishanthi Practicals</h1><br><br>
+    <h1>Hershon Practicals</h1><br><br>
 
-    <a href="gettable.php">Gettable</a><br>
+    <a href="getTable.php">Gettable</a><br>
     
 
 

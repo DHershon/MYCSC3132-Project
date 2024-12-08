@@ -88,12 +88,12 @@ function PrintTableCols($tableName,$connect,$colnames)
 }
 
 //wrtie a function to search the books by name
-function SearchBooks($name,$connect)
+function SearchStudent($name,$connect)
 {
 	try {
 
 	//Query
-		$sql = "SELECT * FROM books where title like '%$name%' ";
+		$sql = "SELECT * FROM student where title like '%$name%' ";
 		//echo $sql;
 	//excute the quey
 		$result = mysqli_query($connect,$sql);
