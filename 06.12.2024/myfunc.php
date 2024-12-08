@@ -50,7 +50,7 @@ catch(Exception $e){
  function student($connect){
             try{
             
-                $sql = "SELECT student_id, name FROM  students";
+                $sql = "SELECT id, name FROM  student";
             
             
                 $result = mysqli_query($connect,$sql);
@@ -75,9 +75,9 @@ catch(Exception $e){
                     foreach ($row as $key => $value) {
                         echo "<td>$value</td>";
                     }
-                    $student_id=$row['student_id'];
+                    $student_id=$row['id'];
                     //query string
-                    echo "<td><a href='printtable.php? student_id=$student_id '> View </a> </td>";
+                    echo "<td><a href='printTable.php? id=$id '> View </a> </td>";
                     echo "</tr>";
                     
                     }
@@ -98,10 +98,10 @@ catch(Exception $e){
 
 
 
-         function Studentdetails($student_id,$connect){
+         function Studentdetails($id,$connect){
             try{
             
-                $sql = "SELECT * FROM  students where  student_id = student_id ";
+                $sql = "SELECT * FROM  student where  id = id ";
             
             
                 $result = mysqli_query($connect,$sql);

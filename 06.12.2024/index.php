@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>2020ASP91</h1><br><br>
+    <h1>2019ASP85</h1><br><br>
 
-    <a href="gettable.php">Gettable</a><br>
+    <a href="getTable.php">Gettable</a><br>
     
-    <a href="myfun.php">MyFunction</a><br>
+    <a href="myfunc.php">MyFunction</a><br>
 
 
     
