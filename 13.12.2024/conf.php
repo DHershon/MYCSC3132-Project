@@ -1,19 +1,8 @@
 <?php
-define('HOST', '127.0.0.1:3306');
+define('HOST', 'localhost');
 define('USERNAME', 'root');
-define('PWD', 'mariadb');
-define('DB', 'parking');
+define('PWD', '');
+define('DB', 'icae02');
 
-try {
-    $connection = mysqli_connect(HOST,USERNAME,PWD,DB);
-    if(!$connection){
-        die("Database not connected!");
-    }
-    else{
-        echo "Database connected succefully!";
-    }
-} catch (Exception $e) {
-    die($e->getMessage());
-}
-echo "<br>";
+$connection = mysqli_connect(HOST,USERNAME,PWD,DB);
 ?>
